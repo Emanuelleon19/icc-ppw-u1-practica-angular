@@ -1,0 +1,7 @@
+<footer class="footer">
+  <h3>{{ curso | uppercase }}</h3>
+  <p>Autor: {{ autor | lowercase }}</p>
+  <p>Fecha: {{ fecha | date:'dd/MM/yyyy' }}</p>
+  <p>Costo del curso: {{ costo | currency:'USD' }}</p>
+  <p>Descripción: {{ descripcion | slice:0:30 }}...</p>
+</footer>
